@@ -1,0 +1,86 @@
+body {
+    font-size: 35px;
+    font-family: sans-serif;
+    background-color: rgb(255, 196, 234);
+}
+
+.page-container {
+    margin-top: 75px;
+}
+
+.button-group {
+    padding: 5vw;
+    text-align: center;
+    border:gray solid 2px;
+}
+
+.button-group > button {
+    font-size: 1.5em;
+    margin:10px;
+    padding: 10px;
+}
+
+#counterText {
+    color: black;
+    font-family: consolas, arial, sans-serif;
+    font-size: 4em;
+    text-align: center;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display : grid;
+    place-items : center;
+    height: 100vh;
+    background-color : var(--color-1);
+    
+
+}
+
+:root{
+    --color-1: lightBlue; /* Mobile */
+    --color-2: lavender; /* Tablet */
+    --color-3: lightGreen; /* Laptop */
+    --color-4: lightPink; /* Desktop */
+}
+
+
+#size {
+    position: absolute;
+    /* Positioning scrfeen size below the main */
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(22, 19, 19);
+    font-size: 35px;
+}
+
+@media screen and (max-width: 1200px){
+    .container {
+        background-color: var(--color-4);
+    }
+}
+
+@media screen and (max-width: 992px){
+    .container {
+        background-color: var(--color-3);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        background-color: var(--color-2);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        background-color: var(--color-1);
+    }
+}
+
